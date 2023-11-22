@@ -58,20 +58,103 @@
 
 // 5.4
 
-let myTable = []
+// let myTable = []
 
-rows = 5
-cols = 5
+// rows = 5
+// cols = 5
 
-counter = 0
+// counter = 0
 
-for (i=0; i<rows; i++){
-    tempTable = []
-    for (j=0; j<cols;j++){
-        counter++
-        tempTable.push(counter)
+// for (i=0; i<rows; i++){
+//     tempTable = []
+//     for (j=0; j<cols;j++){
+//         counter++
+//         tempTable.push(counter)
+//     }
+//     myTable.push(tempTable)
+// }
+
+// console.table(myTable)
+
+// 5.5 
+
+// const grid = []
+// cells = 64
+// counter = 0
+// let row 
+// // cols = 8
+
+// for(i=0;i<cells+1;i++) {
+//     if (counter%8==0){
+//         if(row != undefined) {
+//             grid.push(row)
+//         }
+//         row = []
+//     }
+
+//     counter++
+//     let temp = counter
+//     row.push(temp)
+// }
+// console.table(grid)
+
+// 5.6
+
+// arr = []
+
+// for (i=0;i<10;i++){
+//     arr.push(i + 1)
+// }
+// console.log(arr)
+
+
+// for (name of arr){
+//     console.log(name)
+// }
+
+// 5.7
+
+// obj = {
+//     name: "keff",
+//     job: "Skater",
+//     age: 34
+// }
+
+// for (let prop in obj) {
+//     console.log(obj[(prop)])
+// }
+
+// 5.8
+
+// output = ""
+
+// skip = 2
+
+// for (i=0;i<10;i++){
+//     if(i==skip){
+//         // break
+//         continue
+//     }
+//     output = output.concat(i)
+// }
+
+// console.log(output)
+
+// Chapter 5 Exercise 
+
+arr = []
+
+value = 5
+
+outer:
+for (i=0; i<value; i++){
+        tempTable = []
+        inner:
+        for (j=0; j<value;j++){
+            counter++
+            tempTable.push(i*j)
+        }
+        arr.push(tempTable)
     }
-    myTable.push(tempTable)
-}
 
-console.table(myTable)
+console.table(arr)
