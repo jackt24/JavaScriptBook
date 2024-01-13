@@ -103,12 +103,92 @@
 
 // 6.6
 
-function check(num){
-    if (num == 0){
-        return 1
-    } else {
-        return num*check(num-1);
-    }
+// function check(num){
+//     if (num == 0){
+//         return 1
+//     } else {
+//         return num*check(num-1);
+//     }
+// }
+
+// console.log(check(7))
+
+// 6.7
+
+// start = 10
+// function countdown(val){
+//     console.log(val)
+//     if (val<1) {
+//         return
+//     } else if (val>=1) {
+//         return countdown(val-1)
+//     }
+// }
+
+// function countdownTwo(val){
+//     console.log(val)
+//     if (val>0) {
+//         val--
+//         return countdownTwo(val)
+//     } else {
+//         return
+//     }
+// }
+
+
+// countdown(start)
+// countdownTwo(start)
+
+// 6.8
+
+// let myVariable = function (x) {
+//     console.log(x)
+// }
+
+// myVariable(6)
+
+
+// function myFunction(x) {
+//     console.log(x)
+// }
+
+// myFunction(4)
+
+// Chapter Project
+
+// part 1
+
+// start = 0
+
+// function counter(val){
+//     console.log(val)
+//     if (val == 10){
+//         return 
+//     }
+//     counter(val+1)
+// }
+
+// part 2
+
+let printNumbers = () => {
+    console.log("1")
 }
 
-console.log(check(4))
+let printNumbers2 = () => {
+    console.log("2")
+}
+
+let printNumbers3 = () => {
+    console.log("3")
+    printNumbers()
+    printNumbers2()
+}
+
+let printNumbers4 = () => {
+    console.log("4")
+    setTimeout(printNumbers,0)
+    printNumbers3()
+    
+}
+
+printNumbers4()
