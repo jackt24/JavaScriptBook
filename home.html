@@ -3,11 +3,54 @@
 
 <head>
     <title>Hello there, world</title>
-    <script type="text/javascript" src="chapter8.js"></script>
+    <script type="text/javascript" src="exercise8.js"></script>
 </head>
 
 <body>
+    <h1>Hello</h1>
     <p>Wow this site is insane</p>
+    <div class="output">Test
+        <ul>
+            <li id="one">One</li>
+            <li class="red">Two</li>
+        </ul>
+    </div>
+    <div>test</div>
+
+
+    <script>
+       
+        elem = document.querySelector(".red")
+        mainList = document.querySelector(".output ul")
+        mainList.id = "mainList"
+        
+        
+
+        tag = document.querySelectorAll("div")
+        
+        
+
+        for(i=0;i<tag.length;i++){
+            tag[i].id="id" + (i+1)
+            if (i % 2){
+                tag[i].style.color="red"}
+            else
+            {
+                tag[i].style.color="blue"}
+            }
+                    
+
+        console.log(tag)
+    </script>
 </body>
 
 </html>
+<!-- arr.push(elem.querySelectorAll("div")) -->
+ <!-- const ele = document.querySelector("div")
+        ele.textContent
+        ele.classList.add("Red")
+        ele.id = "tester"
+        ele.style.backgroundColor = "Red"
+        url = ele.baseURI
+        ele.insertAdjacentText("beforebegin",url)
+        console.log(url) -->
